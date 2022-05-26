@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alice', serif;
+}
+
+/*Este es el container de la lista inicio, acerca de...*/
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+}
+li{
+    padding: 30px;   
+}
+
+/*Este es la imagen principal*/
+
+.containerimg{
+    background:url("img/Header.png") no-repeat center;
+    height: 100vh;
+}
+
+.containerimg img{
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+/*Seccion de informacion de nutricion con boton*/
+
+.container3{
+    font-size: 1.3rem;
+    color: #2E4D72;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    padding: 140px;
+    margin: 0px;
+}
+.Title{
+    color: #2E4D72;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Subtitle {
+    font-size: 2.5rem;
+    color: #2E4D72;
+    display: flex;
+    justify-content: center;
+}
+
+
+.item {
+    width: 40%;
+    border: medium solid;
+    padding: 20px;
+    margin: 20px 5px 0 50px;
+}
+
+.item{
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    font-size: 30px;
+}
+/*No se como poner el hover*/
+.containerbutton{
+    width: 1400px;
+    height: 80px;
+}
+
+
+
+button{
+    background-color: #2596be;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family:  'Lucida Sans Unicode';
+    color: black;
+    box-shadow: -10px 5px 5px 5px #417c7d;
+    border: none;
+
+   
+}
+
+button:hover {
+    background-color: red;
+  
+}
+
+    
+/*Seccion de planes nutricionales */
+    .Circular img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0;
+        border-radius: 50%;
+    }
+    .img-div{
+        background-color: salmon;
+        background: url(img/Paquete\ Complet.jpg) no-repeat center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 50%;
+    }
+
+/*Añadir el degradado de color */
+.Containernuestrosplanes{
+    background-color:   #04c4cb;
+ 
+    
+} 
+
+.Circular{
+    display: flex;
+    padding: 80px;
+}
+
+
+.Secondtitle{
+    background-color: #04c4cb;
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Lucida Sans Unicode';
+    text-align: center;
+}
+.Picture {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bottom{
+    background-color: #04c4cb;
+    font-size: 4.3rem;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    color: #F7F8F9;
+    font-family: 'Lucida Sans Unicode';
+
+
+}
+
+    body{
+        background-image: url(img/Thalia\ Olvera\ isotipo\ sin\ fondo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+   
+/*Aqui comienza mi pie de pagina*/
+
+.Piedepagina{
+    background-color: #0a92bc;
+    margin: 0px;
+    padding: 5px;
+
+    
+}
+.Piedepagina .Grupo1{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+
+.Piedepagina .Grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Piedepagina .Grupo1 .box figure img{
+    width: 250px;
+}
+
+.Piedepagina .Grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 2.5;
+}
+
+.Piedepagina .Grupo1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.Redsocial {
+   display: flex;
+   justify-content: space-around;
+   font-size: 2.5rem;
+   text-decoration: none;
+
+}
+/*Aqui comienza el formulario de dudas*/
+form{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+
+.copy{
+    background-color: #0a92bc;
+    width: 100%;
+    margin: auto;
+    padding: 45px 0px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+    
