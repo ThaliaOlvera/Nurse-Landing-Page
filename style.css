@@ -1,67 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+/*.Megacontenedor{
+}*/
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Alice', serif;
+    width: 100%;
+    
 }
 
 /*Este es el container de la lista inicio, acerca de...*/
 .container2{
+    background-color: transparent;
     display: flex;
-    flex-direction: row-reverse;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
     list-style: none;
     font-size: 20px;
     color: white;
-    background-color: transparent;
+    width: 100%;
+
 }
+
 li{
-    padding: 30px;   
+    padding: 10px;
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*Este es la imagen principal*/
 
 .containerimg{
     background:url("img/Header.png") no-repeat center;
-    height: 50rem;
+    height: 45rem;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
 }
 
-.containerimg img{
-    width: 100%;
-    margin: 0;
-    display: flex;
-}
+
 
 /*Seccion de informacion de nutricion con boton*/
 
+body{
+    background-image: url(img/Thalia\ Olvera\ isotipo\ sin\ fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+
+
 .container3{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #2E4D72;
     display: flex;
     flex-flow: row wrap; 
     justify-content: center;
-    padding: 140px;
+    text-align: center;
+    padding: 0px;
     margin: 0px;
+    width: 100%;
+    
+    
 }
 .Title{
+    margin-top: 5rem;
     color: #2E4D72;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .Subtitle {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
     color: #2E4D72;
     display: flex;
     justify-content: center;
+    width: 100%;
+   
 }
 
 
 .item {
-    width: 40%;
+    width: 30rem;
     border: medium solid;
     padding: 20px;
-    margin: 20px 5px 0 50px;
+    margin: 20px 5px 10px 50px;
+    width: 100%;
 }
 
 .item{
@@ -70,20 +105,20 @@ li{
     border-left: none;
     border-right: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.3rem;
+    width: 100%;
+    
 }
 
 .containerbutton{
-    width: 1400px;
-    height: 80px;
+    width: 40rem;
+    height: 13rem;
 }
 
 
 
 button{
     background-color: #2596be;
-    width: 200px;
-    height: 50px;
     border-radius: 30px;
     font-size: 20px;
     font-family:  'Lucida Sans Unicode';
@@ -104,11 +139,12 @@ button:hover {
 
 .Containernuestrosplanes{
     background-color:   #04c4cb;
+    width: 100%;
 } 
 
 .contenedor {
     display: flex;
-    padding: 80px;
+    padding: 0;
     
     
 }
@@ -119,14 +155,15 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    width: 450px;
-    height: 450px;
+    width: 24rem;
+    height: 24rem;
     border-radius: 10px;
     color: black;
     font-size: 2.5rem;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    width: 100%;
   
 }
 .caja-img2{
@@ -136,13 +173,12 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    width: 450px;
-    height: 450px;
     border-radius: 10px;
     color: black;
     font-size: 2.5rem;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 .caja-img3{
     
@@ -151,8 +187,6 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    width: 450px;
-    height: 450px;
     border-radius: 10px;
     color: white;
     font-size: 2.5rem;
@@ -160,16 +194,19 @@ button:hover {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    width: 100%;
 }
 
 .encabezado{
     background-color: #e2be2c;
+    width: 100%;
 
 }
 
 .subencabezado{
     background-color: white;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 
@@ -179,47 +216,44 @@ button:hover {
     font-size: 4.5rem;
     font-family: 'Lucida Sans Unicode';
     text-align: center;
+    width: 100%;
     
 }
 .Picture {
     color: white;
     font-size: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 
 .bottom{
     background-color: #04c4cb;
-    font-size: 4.3rem;
+    font-size: 3.3rem;
     text-align: center;
     margin: 0;
-    padding: 5%;
+    padding: 0;
     color: #F7F8F9;
     font-family: 'Lucida Sans Unicode';
+    width: 100%;
+    height: 12rem;
 
 
 }
 
-    body{
-        background-image: url(img/Thalia\ Olvera\ isotipo\ sin\ fondo.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    
+   
    
 /*Aqui comienza mi pie de pagina*/
 
 .Piedepagina{
     background-color: #0a92bc;
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
+    width: 100%;
 
     
 }
 .Piedepagina .Grupo1{
     width: 100%;
-    max-width: 1000px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -237,18 +271,20 @@ button:hover {
 }
 
 .Piedepagina .Grupo1 .box figure img{
-    width: 250px;
+    width: 100%;
 }
 
 .Piedepagina .Grupo1 .box h2{
     color: white;
     margin-bottom: 25px;
     font-size: 2.5;
+    width: 100%;
 }
 
 .Piedepagina .Grupo1 .box p{
     color: white;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .Redsocial {
@@ -256,37 +292,38 @@ button:hover {
    justify-content: space-around;
    font-size: 2.5rem;
    text-decoration: none;
+   width: 100%;
 
 }
 /*Aqui comienza el formulario de dudas*/
 form{
     font-size: 1.2rem;
     color: white;
+    width: 100%;
 }
 
 #name {
-    width: 320px;
-    height: 25px;
+    height: 2rem;
     border-radius: 20px;
     text-align: center;
+    width: 100%;
 }
 #duda {
-    width: 320px;
-    height: 25px;
+    height: 2rem;
     border-radius: 20px;
     text-align: center;
+    width: 100%;
 }
 
 #Ingresesucorreo{
-    width: 320px;
-    height: 25px;
+    height: 2rem;
     border-radius: 20px;
     text-align: center;
+    width: 100%;
 }
 
 #suscribirse{
-    width: 220px;
-    height: 55px;
+    height: 4rem;
     border-radius: 20px;
     text-align: center;
     margin-top: 20px;
@@ -295,6 +332,7 @@ form{
     border-left: none;
     border-top: none;
     border-right: none;
+    width: 100%;
 
 }
 
@@ -305,8 +343,6 @@ form{
   
 }
 
-
-
 .copy{
     background-color: #0a92bc;
     width: 100%;
@@ -316,4 +352,57 @@ form{
     text-align: center;
     color: white;
 }
-    
+
+
+    /*Responsive*/
+
+    @media only screen and (max-width:1400px) {
+        .container2{
+            width: 1024px;
+            height: 1313px;
+        }
+        .containerimg{
+            background:url("img/Header.png") no-repeat center;
+            height: 30rem;
+            background-size: contain;
+        }
+        
+        .encabezado{
+            background-color: #C9E265;
+        }
+        
+
+    }
+
+    @media only screen and (max-width:768px) {
+
+        .container2{
+            width: 768px;
+            height: auto;
+        }
+        .containerimg{
+            background:url("img/Header.png") no-repeat center;
+            height: 22.5rem;
+            background-size: contain;
+        }
+        li{
+            font-size: 1rem;
+        }
+
+        
+        
+        
+
+       
+        .encabezado{
+            background-color: #FFDE59;
+        
+        }
+    }
+
+    @media only screen and (max-width:425px) {
+        .encabezado{
+            background-color: #038080;
+        
+        }
+    }
