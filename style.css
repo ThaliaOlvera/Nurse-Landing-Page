@@ -364,7 +364,7 @@ form{
         .containerimg{
             background:url("img/Header.png") no-repeat center;
             height: 30rem;
-            background-size: contain;
+            background-size: cover;
         }
         
         .encabezado{
