@@ -6,6 +6,15 @@
     font-family: 'Alice', serif;
 }
 
+:root{
+--Color-primario-1:  #73BFB8;
+--Color-secundario:  #6DB5AE;
+--Dark-background-color: #737373 ;
+--Light-background-color: #FEFFFF;
+--Dark-text-color: #2B2B2B ;
+
+}
+
 
 header{
     width: 100%;
@@ -14,8 +23,8 @@ header{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a92bc;
-    color: beige;
+    background-color: var(--Light-background-color);
+    color: var(--Dark-text-color);
     position: fixed;
     z-index: 1000;
 }
@@ -33,11 +42,12 @@ header{
 .list_container ul li{
     text-align: center;
     transition: ease-out 0.3s;
+    cursor: pointer;
 }
 
 .list_container ul li:hover{
     transform: scale(1.2);
-color: #e2be2c;
+color: var(--Color-secundario);
 }
 
 .logo_container{
@@ -47,74 +57,35 @@ color: #e2be2c;
 }
 
 .logo_container img{
-    width: 70px;
+    width: 180px;
     height: 60px;
+    cursor: pointer;
 }
 
-/*Seccion de informacion de nutricion con boton*/
 
-body{
-    background-image: url(img/Thalia\ Olvera\ isotipo\ sin\ fondo.png);
-    background-position: center center;
+.aboutme-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+    width: 100%;
+}
+
+.img-profesionist{
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/nurseImg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    background-position: center;
 }
 
-
-
-.container3{
-    font-size: 1rem;
-    color: #2E4D72;
+.info-container{
     display: flex;
-    flex-flow: row wrap; 
-    justify-content: center;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    
-    
-}
-.Title{
-    margin-top: 5rem;
-    color: #2E4D72;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.Subtitle {
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    color: #2E4D72;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-   
+    flex-direction: column;
 }
 
 
-.item {
-    width: 30rem;
-    border: medium solid;
-    padding: 20px;
-    margin: 20px 5px 10px 50px;
-    width: 100%;
-}
 
-.item{
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-    font-size: 1.3rem;
-    width: 100%;
-    
-}
 
 .containerbutton{
     width: 40rem;
@@ -128,7 +99,6 @@ button{
     border-radius: 30px;
     font-size: 20px;
     font-family:  'Lucida Sans Unicode';
-    color: white;
     box-shadow: -10px 5px 5px 5px #417c7d;
     border: none;
 
