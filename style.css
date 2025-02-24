@@ -1,51 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
-/*.Megacontenedor{
-}*/
-
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Alice', serif;
-    width: 100%;
-    
 }
 
-/*Este es el container de la lista inicio, acerca de...*/
-.container2{
-    background-color: transparent;
+
+header{
+    width: 100%;
+    height: 10dvh;
     display: flex;
-   flex-direction: row-reverse;
-   justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a92bc;
+    color: beige;
+    position: fixed;
+    z-index: 1000;
+}
+
+.list_container{
+    width: 50%;
+}
+
+.list_container ul {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-    font-size: 20px;
-    color: white;
-    width: 100%;
-    position: relative;
-
 }
 
-li{
-    padding: 10px;
-    margin: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.list_container ul li{
+    text-align: center;
+    transition: ease-out 0.3s;
 }
 
-/*Este es la imagen principal*/
-
-.containerimg{
-    background:url("img/Header.png") no-repeat center;
-    position: static;
-    height: 100vh;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
+.list_container ul li:hover{
+    transform: scale(1.2);
+color: #e2be2c;
 }
 
+.logo_container{
+    width: 50%;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
 
+.logo_container img{
+    width: 70px;
+    height: 60px;
+}
 
 /*Seccion de informacion de nutricion con boton*/
 
