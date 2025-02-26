@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Alice", serif;
+  text-wrap: balance;
 }
 
 :root {
@@ -20,7 +21,7 @@
 
 header {
   width: 100%;
-  height: 10dvh;
+  height: 15dvh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -45,6 +46,7 @@ header {
   width: 40px;
   height: 40px;
   padding-right: 1rem;
+  padding-top: 1rem;
   cursor: pointer;
 }
 
@@ -67,7 +69,7 @@ header {
 
 .logo_container {
   width: 100%;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 
 .logo_container img {
@@ -77,13 +79,15 @@ header {
   padding-left: 1rem;
 }
 
+/*About me Section*/
+
 .aboutme-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60dvh;
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .info-container {
@@ -117,6 +121,13 @@ header {
 .info-container button:hover {
   transform: scale(1.1);
 }
+/*Main section*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
 
 .profesionist-container {
   display: flex;
@@ -129,4 +140,49 @@ header {
   width: 180px;
   height: 180px;
   border-radius: 80px 0px 0px 80px;
+}
+
+/*Cards Services Section*/
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.info-cards {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--Color-secundario);
+  border-radius: 20px;
+  box-shadow: 5px 5px 22px 4px rgba(115, 115, 115, 0.3);
+}
+
+.info-cards img {
+  width: 80px;
+  height: 80px;
+}
+
+.info-cards button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px var(--Dark-text-color);
+  font-size: var(--small);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info-cards button:hover {
+  transform: scale(1.1);
 }
