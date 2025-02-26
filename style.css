@@ -1,402 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Alice', serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alice", serif;
 }
 
-:root{
---Color-primario-1:  #73BFB8;
---Color-secundario:  #6DB5AE;
---Dark-background-color: #737373 ;
---Light-background-color: #FEFFFF;
---Dark-text-color: #2B2B2B ;
-
+:root {
+  --Color-primario-1: #73bfb8;
+  --Color-secundario: #6db5ae;
+  --Dark-background-color: #737373;
+  --Light-background-color: #feffff;
+  --Dark-text-color: #2b2b2b;
+  --small: 16px;
+  --medium: 24px;
+  --large: 28px;
+  --xlg: 36px;
 }
 
-
-header{
-    width: 100%;
-    height: 10dvh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--Light-background-color);
-    color: var(--Dark-text-color);
-    position: fixed;
-    z-index: 1000;
+header {
+  width: 100%;
+  height: 10dvh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Light-background-color);
+  color: var(--Dark-text-color);
+  position: fixed;
+  z-index: 1000;
 }
 
-.list_container{
-    width: 50%;
+.list_container {
+  display: none;
+  width: 50%;
+}
+
+.hamburgerMenu {
+  width: 100%;
+  text-align: end;
+}
+
+.hamburgerMenu img {
+  width: 40px;
+  height: 40px;
+  padding-right: 1rem;
+  cursor: pointer;
 }
 
 .list_container ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
-.list_container ul li{
-    text-align: center;
-    transition: ease-out 0.3s;
-    cursor: pointer;
+.list_container ul li {
+  text-align: center;
+  transition: ease-out 0.3s;
+  cursor: pointer;
 }
 
-.list_container ul li:hover{
-    transform: scale(1.2);
-color: var(--Color-secundario);
+.list_container ul li:hover {
+  transform: scale(1.2);
+  color: var(--Color-secundario);
 }
 
-.logo_container{
-    width: 50%;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+.logo_container {
+  width: 100%;
+  padding-top: 0.5rem;
 }
 
-.logo_container img{
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
+.logo_container img {
+  width: 150px;
+  height: 60px;
+  cursor: pointer;
+  padding-left: 1rem;
 }
 
-
-.aboutme-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90dvh;
-    width: 100%;
+.aboutme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60dvh;
+  width: 100%;
+  padding-top: 3rem;
 }
 
-.img-profesionist{
-    width: 100%;
-    height: 400px;
-    background-image: url(/img/nurseImg.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 60dvh;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
-.info-container{
-    display: flex;
-    flex-direction: column;
+.info-container h1 {
+  font-size: var(--xlg);
 }
 
-
-
-
-.containerbutton{
-    width: 40rem;
-    height: 13rem;
+.info-container button {
+  background-color: var(--Color-secundario);
+  color: var(--Dark-text-color);
+  font-weight: 800;
+  border-style: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 22px 4px rgba(115, 115, 115, 0.3);
+  transition: ease-in-out 0.3s;
 }
 
-
-
-button{
-    background-color: #2596be;
-    border-radius: 30px;
-    font-size: 20px;
-    font-family:  'Lucida Sans Unicode';
-    box-shadow: -10px 5px 5px 5px #417c7d;
-    border: none;
-
-   
+.info-container button:hover {
+  transform: scale(1.1);
 }
 
-button:hover {
-    background-color: #e2be2c;
-  
+.profesionist-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: var(--Color-primario-1);
 }
 
-    
-/*Seccion de planes nutricionales */
-
-.Containernuestrosplanes{
-    background-color:   #04c4cb;
-    width: 100%;
-} 
-
-.contenedor {
-    display: flex;
-    padding: 0;
-    
-    
+.profesionist-container img {
+  width: 180px;
+  height: 180px;
+  border-radius: 80px 0px 0px 80px;
 }
-.caja-img1{
-   
-    background-image: url("img/Paquete\ Ind.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px;
-    width: 24rem;
-    height: 24rem;
-    border-radius: 10px;
-    color: black;
-    font-size: 2.5rem;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-  
-}
-.caja-img2{
-    
-    background-image: url("img/Paquete\ Pareja.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px;
-    border-radius: 10px;
-    color: black;
-    font-size: 2.5rem;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-.caja-img3{
-    
-    background-image: url("img/Paquete\ Complet.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 10px;
-    border-radius: 10px;
-    color: white;
-    font-size: 2.5rem;
-    color: black;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
-
-.encabezado{
-    background-color: #e2be2c;
-    width: 100%;
-
-}
-
-.subencabezado{
-    background-color: white;
-    font-size: 1.5rem;
-    width: 100%;
-}
-
-
-.Secondtitle{
-    background-color: #04c4cb;
-    color: white;
-    font-size: 4.5rem;
-    font-family: 'Lucida Sans Unicode';
-    text-align: center;
-    width: 100%;
-    
-}
-.Picture {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.bottom{
-    background-color: #04c4cb;
-    font-size: 3.3rem;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #F7F8F9;
-    font-family: 'Lucida Sans Unicode';
-    width: 100%;
-    height: 12rem;
-
-
-}
-
-   
-   
-/*Aqui comienza mi pie de pagina*/
-
-.Piedepagina{
-    background-color: #0a92bc;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-
-    
-}
-.Piedepagina .Grupo1{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-
-}
-
-.Piedepagina .Grupo1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Piedepagina .Grupo1 .box figure img{
-    width: 100%;
-}
-
-.Piedepagina .Grupo1 .box h2{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 2.5;
-    width: 100%;
-}
-
-.Piedepagina .Grupo1 .box p{
-    color: white;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.Redsocial {
-   display: flex;
-   justify-content: space-around;
-   font-size: 2.5rem;
-   text-decoration: none;
-   width: 100%;
-
-}
-/*Aqui comienza el formulario de dudas*/
-form{
-    font-size: 1.2rem;
-    color: white;
-    width: 100%;
-}
-
-#name {
-    height: 2rem;
-    border-radius: 20px;
-    text-align: center;
-    width: 100%;
-}
-#duda {
-    height: 2rem;
-    border-radius: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-#Ingresesucorreo{
-    height: 2rem;
-    border-radius: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-#suscribirse{
-    height: 4rem;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    border-bottom: none;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    width: 100%;
-
-}
-
-#suscribirse:hover {
-    background-color: #e2be2c;
-    color: white;
-    
-  
-}
-
-.copy{
-    background-color: #0a92bc;
-    width: 100%;
-    margin: auto;
-    padding: 45px 0px;
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-
-
-    /*Responsive*/
-/*
-    @media only screen and (max-width:1400px) {
-        .container2{
-            width: 1024px;
-            height: 1313px;
-        }
-        .containerimg{
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .encabezado{
-            background-color: yellow;
-        }
-    }
-
-
-
-    @media only screen and (max-width:1200px) {
-
-        .container2{
-            width: 768px;
-            height: auto;
-        }
-        .containerimg{
-            background:url("img/Header.png") no-repeat center;
-            height: 22.5rem;
-            background-size: contain;
-        }
-        li{
-            font-size: 1rem;
-        }
-
-       
-        .encabezado{
-            background-color: #FFDE59;
-        
-        }
-    }
-
-    @media only screen and (max-width:992px) {
-        .encabezado{
-            background-color: #038080;
-        
-        }
-    }
-
-
-    @media only screen and (max-width:768px) {
-        .encabezado{
-            background-color: #038080;
-        
-        }
-    }
-
-    @media only screen and (max-width:576px) {
-        .encabezado{
-            background-color: #038080;
-        
-        }
-    }
-
-    @media only screen and (max-width:320px) {
-        .encabezado{
-            background-color: #038080;
-        
-        }
-    }
