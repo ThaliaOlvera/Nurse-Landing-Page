@@ -186,3 +186,42 @@ main {
 .info-cards button:hover {
   transform: scale(1.1);
 }
+
+/*Experience Section*/
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.circleIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  background-color: var(--Color-secundario);
+}
+
+.experience-container h2 {
+  text-align: center;
+}
+
+.experience-container article p {
+  padding-top: 1rem;
+}
+
+.hands {
+  width: calc(100% - 2rem);
+  padding-left: 2rem;
+}
+
+.hands img {
+  width: 100%;
+  height: 300px;
+  border-radius: 150px 0px 0px 150px;
+}
