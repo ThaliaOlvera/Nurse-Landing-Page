@@ -225,3 +225,33 @@ main {
   height: 300px;
   border-radius: 150px 0px 0px 150px;
 }
+
+/*Footer*/
+footer {
+  background-color: var(--Dark-text-color);
+  color: var(--Light-background-color);
+  text-align: center;
+  padding: 20px;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: var(--small);
+}
+.social-links li {
+  display: inline;
+}
+.social-links a {
+  color: var(--Light-background-color);
+  text-decoration: none;
+  font-size: var(--small);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.social-links a:hover {
+  color: var(--Color-primario-1);
+}
