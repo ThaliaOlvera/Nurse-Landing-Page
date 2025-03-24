@@ -134,12 +134,14 @@ main {
   justify-content: end;
   width: 100%;
   background-color: var(--Color-primario-1);
+  border-radius: 0px 80px 80px 0px;
 }
 
 .profesionist-container img {
   width: 180px;
   height: 180px;
-  border-radius: 80px 0px 0px 80px;
+  background-color: pink;
+  border-radius: 80px 80px 80px 80px;
 }
 
 /*Cards Services Section*/
@@ -272,12 +274,34 @@ footer {
   }
 }
 
-img {
+article {
   view-timeline-name: --image;
   view-timeline-axis: block;
 
   animation-timeline: --image;
   animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes showImg {
+  from {
+    opacity: 0;
+    transform: translateX(-380px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Termina en su posición normal */
+  }
+}
+
+.profesionist-container {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: showImg;
 
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
