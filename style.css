@@ -32,11 +32,6 @@ header {
   z-index: 1000;
 }
 
-.list_container {
-  display: none;
-  width: 50%;
-}
-
 .hamburgerMenu {
   width: 100%;
   text-align: end;
@@ -50,14 +45,33 @@ header {
   cursor: pointer;
 }
 
+.list_container {
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+}
+
+.list_container.visible {
+  opacity: 1;
+  height: 30dvh;
+  padding: 1rem;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  background-color: var(--Color-secundario);
+  border-radius: 10px;
+  visibility: visible;
+}
+
 .list_container ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .list_container ul li {
-  text-align: center;
+  text-align: start;
   transition: ease-out 0.3s;
   cursor: pointer;
 }

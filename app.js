@@ -1,16 +1,14 @@
-const togleMenu = document.querySelector(".hamburgerMenu");
-const infoMenu = document.querySelector(".list_container");
+const openMenu = document.querySelector(".hamburgerMenu");
+const nav = document.querySelector(".list_container");
 
-togleMenu.addEventListener("click", (e) => {
-  e.stopPropagation();
-  togleMenu.classList.add("list_container");
+openMenu.addEventListener("click", () => {
+  nav.classList.add("visible");
   console.log("MenuAbierto");
 });
 
 window.addEventListener("click", (e) => {
-  if (!togleMenu.contains(e.target) && !togleMenu.contains(e.target)) {
-    togleMenu.classList.remove("list_container");
-
-    console.log("Cerrado");
+  if (!openMenu.contains(e.target) && !nav.contains(e.target)) {
+    nav.classList.remove("visible");
+    console.log("Menú cerrado");
   }
 });
