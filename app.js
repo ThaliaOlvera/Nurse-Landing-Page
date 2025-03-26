@@ -6,7 +6,6 @@ openMenu.addEventListener("click", () => {
   nav.classList.add("visible");
   closeMenu.classList.add("visible");
   openMenu.classList.replace("hamburgerMenu", "inactive");
-  console.log("MenuAbierto");
 });
 
 window.addEventListener("click", (e) => {
@@ -17,7 +16,5 @@ window.addEventListener("click", (e) => {
   ) {
     nav.classList.remove("visible");
     openMenu.classList.replace("inactive", "hamburgerMenu");
-
-    console.log("Menú cerrado");
   }
 });

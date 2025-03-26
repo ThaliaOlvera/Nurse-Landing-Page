@@ -56,7 +56,7 @@ header {
 .list_container {
   height: 25dvh;
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   right: 0.5rem;
   border-radius: 10px;
   opacity: 0;
@@ -119,6 +119,7 @@ header {
 .logo_container {
   width: 100%;
   padding-top: 1rem;
+  padding-left: 1.5rem;
 }
 
 .logo_container img {
@@ -201,12 +202,12 @@ main {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 .card-container h2 {
   font-size: var(--large);
-  padding-bottom: 1rem;
+  padding-top: 3rem;
 }
 
 .info-cards {
@@ -252,6 +253,7 @@ main {
   text-align: start;
   gap: 2rem;
   padding: 2rem;
+  margin-bottom: 3rem;
 }
 
 .circleIcon {
@@ -271,14 +273,12 @@ main {
 }
 
 .hands {
-  width: calc(100% - 2rem);
-  padding-left: 2rem;
-}
-
-.hands img {
   width: 100%;
-  height: 300px;
-  border-radius: 150px 0px 0px 150px;
+  height: 30dvh;
+  background-image: url(img/closeup-support-hands.webp);
+  background-size: cover;
+  border-radius: 100px 0px 0px 100px;
+  margin-bottom: 3rem;
 }
 
 /*Footer*/
@@ -353,4 +353,77 @@ article {
 
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
+}
+
+/*Responsive*/
+
+@media (min-width: 520px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .list_container {
+    display: flex;
+    justify-content: end;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+  }
+
+  .closeMenu.visible {
+    display: none;
+  }
+
+  .list_container ul {
+    flex-direction: row;
+  }
+
+  .list_container ul li {
+    width: 100px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--Light-background-color);
+    transition: all 0.3s ease-in-out;
+    border-bottom: none;
+  }
+
+  .list_container ul li:nth-child(3) {
+    border-radius: 0px;
+  }
+  .list_container ul li:nth-child(1) {
+    border-radius: 0px;
+  }
+
+  .list_container ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 1px 0px rgba(109, 181, 174, 0.8);
+  }
+
+  .list_container ul li a:focus-visible {
+    outline: 2px solid var(--Color-secundario);
+    outline-offset: 3px;
+    border-radius: 10px;
+  }
+
+  .info-container {
+    gap: 2rem;
+    padding-left: 2rem;
+  }
+
+  .info-container h1 {
+    width: 50%;
+    font-size: var(--xlg);
+  }
+
+  .hands {
+    width: 100%;
+    height: 50dvh;
+    background-image: url(img/closeup-support-hands.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+  }
 }
