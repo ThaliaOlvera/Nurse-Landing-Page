@@ -37,6 +37,14 @@ header {
   text-align: end;
 }
 
+.inactive {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
 .hamburgerMenu img {
   width: 40px;
   height: 40px;
@@ -46,39 +54,66 @@ header {
 }
 
 .list_container {
-  display: flex;
-  gap: 1rem;
+  height: 25dvh;
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  border-radius: 10px;
   opacity: 0;
+  z-index: -1000;
 }
 
 .list_container.visible {
   opacity: 1;
-  height: 30dvh;
-  padding: 1rem;
-  position: absolute;
-  top: 5rem;
-  right: 1rem;
-  background-color: var(--Color-secundario);
-  border-radius: 10px;
   visibility: visible;
+}
+
+.closeMenu.visible {
+  width: 50px;
+  height: 50px;
+  align-items: end;
+  position: relative;
+  top: 0rem;
+  left: 5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  padding-bottom: 4px;
+  background-image: url(img/curita.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .list_container ul {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: column-reverse;
   list-style: none;
 }
 
 .list_container ul li {
-  text-align: start;
+  width: 100px;
+  padding: 1rem;
+  text-align: end;
   transition: ease-out 0.3s;
   cursor: pointer;
+  background-color: var(--Color-secundario);
+  border-bottom: 2px solid var(--Dark-background-color);
+}
+.list_container ul li:nth-child(3) {
+  border-radius: 4px 4px 0px 0px;
+}
+.list_container ul li:nth-child(1) {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list_container ul li a {
+  text-decoration: none;
+  color: var(--Dark-text-color);
 }
 
 .list_container ul li:hover {
-  transform: scale(1.2);
-  color: var(--Color-secundario);
+  transform: scale(1.1);
+  color: var(--Dark-text-color);
+  filter: var(--Color-primario-1);
 }
 
 .logo_container {
@@ -90,7 +125,6 @@ header {
   width: 150px;
   height: 60px;
   cursor: pointer;
-  padding-left: 1rem;
 }
 
 /*About me Section*/
