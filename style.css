@@ -243,6 +243,24 @@ main {
   transform: scale(1.1);
 }
 
+.info-cards-more {
+  display: none;
+  width: 70%;
+  text-align: start;
+  border-top: 1px solid var(--Dark-background-color);
+  transition: 0.3s;
+}
+
+.info-cards-more ul {
+  text-align: start;
+  text-wrap: balance;
+  padding: 0.5rem;
+}
+
+.info-cards-more.visible {
+  display: block;
+}
+
 /*Experience Section*/
 
 .experience-container {
