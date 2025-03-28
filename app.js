@@ -1,8 +1,8 @@
 const openMenu = document.querySelector(".hamburgerMenu");
 const nav = document.querySelector(".list_container");
 const closeMenu = document.querySelector(".closeMenu");
-const btn = document.getElementById("btn-veins");
-const info = document.querySelector(".info-cards-more");
+const btn = document.querySelectorAll(".toggle-btn");
+const cards = document.querySelectorAll(".info-cards-more");
 
 openMenu.addEventListener("click", () => {
   nav.classList.add("visible");
@@ -11,20 +11,32 @@ openMenu.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (e) => {
-  if (
-    !openMenu.contains(e.target) &&
-    !nav.contains(e.target) &&
-    !closeMenu.contains(e.target)
-  ) {
+  if (!openMenu.contains(e.target) && !nav.contains(e.target)) {
     nav.classList.remove("visible");
     openMenu.classList.replace("inactive", "hamburgerMenu");
   }
 });
 
-function toggleCards(button, info) {
-  button.addEventListener("click", () => {
-    info.classList.add("visible");
+function addVisibleOnToggle() {
+  const buttons = document.querySelectorAll(".toggle-btn");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const info = button.parentElement.querySelector(".info-cards-more");
+      if (info) {
+        info.classList.toggle("visible");
+      }
+    });
   });
 }
 
-toggleCards(btn, info);
+window.addEventListener("click", (event) => {
+  document.querySelectorAll(".info-cards-more.visible").forEach((info) => {
+    if (!info.contains(event.target)) {
+      info.classList.remove("visible");
+    }
+  });
+});
+
+addVisibleOnToggle();
